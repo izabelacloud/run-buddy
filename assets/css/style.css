@@ -5,7 +5,7 @@
 }
 
   header {
-    padding: 20px 35 px;
+    padding: 20px 35px;
     background-color: #39a6b2;
   } 
 
@@ -24,7 +24,7 @@
 
   header nav {
     float: right;
-    margin 7px 0;
+    margin: 7px 0;
   }
 
   header nav ul li {
@@ -34,7 +34,7 @@
   header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22 px;
+    font-size: 22px;
   }
 
   body {
@@ -45,7 +45,7 @@
   footer {
     background: #fce138;
     width: 100%;
-    padding: 40px 35 px;
+    padding: 40px 35px;
   }
 
   footer h2 {
