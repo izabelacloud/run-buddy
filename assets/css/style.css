@@ -1,7 +1,8 @@
-body {
-    color: #3916b2;
-    font-family: Helvetica, Arial, sans-serif;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
   header {
     padding: 20px 35 px;
@@ -13,6 +14,7 @@ body {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    display: inline;
   }
 
   header a {
@@ -35,5 +37,32 @@ body {
     font-size: 22 px;
   }
 
+  body {
+    color: #3916b2;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35 px;
+  }
+
+  footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size:  30px;
+    margin: 0;
+  }
+
+  footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+  }
+
+  footer a {
+    color: #024e76;
+  }
 
 
