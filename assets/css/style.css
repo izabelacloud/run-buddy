@@ -65,4 +65,15 @@
     color: #024e76;
   }
 
+section {
+  padding: 60px;
+}
 
+/* Hero Style Start */
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+/* Hero Style End */
