@@ -356,15 +356,34 @@ font-size: 32px;
 }
 
 .service-grid-container {
+  max-width: 940px;
+  margin: 0 auto;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 10px;
 }
 
 .service-grid-item {
-  width: 200px;
-  height: 50px;
   background-color: orange;
   border: solid;
   color: black;
+  padding: 1em;
+}
+
+.box1 {
+grid-column: 1/ span 1;
+grid-row: 1/ span 2;
+}
+
+.box2 {
+  grid-column: 3/4;
+  grid-row: 1/-1;
+}
+
+.box3 {
+  grid-column: 2/ span 2;
+  grid-row: 3/ span 1;
 }
 
 /* Media Query for smaller desktop screens and smaller */
