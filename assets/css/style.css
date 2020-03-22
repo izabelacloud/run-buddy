@@ -307,12 +307,18 @@ section {
 
 .trainer-bio h3 {
   font-size: 28px;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
 }
 
 .trainer-bio h4 {
   font-weight: lighter;
   font-size: 22px;
   margin-bottom: 15px;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
 }
 
 .trainer-bio p {
@@ -537,6 +543,70 @@ button:active {
   content: "";
 }
 
+.trainer-1 {
+  background-image: url(/assets/images/trainer-1.jpg);
+}
+
+.trainer-2 {
+  background-image: url(/assets/images/trainer-2.jpg);
+}
+
+.trainer-3 {
+  background-image: url(/assets/images/trainer-3.jpg);
+}
+
+.trainer-img {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  padding: 15px;
+  align-items: flex-end;
+  position: relative;
+}
+
+.trainer-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(252, 225, 56, 0.3)) 70% ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: ease-in;
+  opacity: 0;
+}
+
+.trainer-img h3 {
+  position: relative;
+  z-index: 777;
+  font-size: 28px;
+  margin-bottom: 5px;
+  top: 200px;
+  transition-duration: 0.6s;
+  transform: translate(-200px);
+}
+
+.trainer-img h4 {
+  position: relative;
+  z-index: 888;
+  font-size: 22px;
+  top: 200px;
+  transition-duration: 0.6s;
+  transform: translate(-100px);
+}
+
+div span {
+  color: blue;
+}
+
+div:hover span {
+  color: red;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+  top: 0px;
+}
+
 /* Media Query for smaller desktop screens and smaller */
 
 @media screen and (max-width: 980px) {
@@ -638,6 +708,14 @@ button:active {
   .some-class {
     text-shadow: 0 0 10px rgbs(0, 0, 0, 0.5);
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
+  }
+
+  .trainer-img {
+    display: none;
+  }
+
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
   }
 
 }
