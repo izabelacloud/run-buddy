@@ -15,6 +15,8 @@ A responsive marketing site for a fitness training service, offering a signup fo
 
 [https://izabelacloud.github.io/run-buddy/](https://izabelacloud.github.io/run-buddy/)
 
+![Run Buddy homepage](https://github.com/izabelacloud/run-buddy/blob/master/assets/screenshots/homepage.png?raw=true)
+
 ## Local Setup
 
 This is a static site with no build step or dependencies.
